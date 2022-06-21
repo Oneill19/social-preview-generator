@@ -5,7 +5,7 @@ This generator generate an image for the repository social preview.
 The program used several frameworks and libraries.
 - ```Bootstrap``` for style.
 - ```jQuery``` for DOM manipulation.
-- ```animate.css``` for animations
+- ```animate.css``` for animations.
 - ```dom-to-img``` to convert the card div to png image.
 - ```FileSaver.js``` to download the image to the pc.
 - ```Google Fonts``` for JetBrains Mono and FiraCode fonts
