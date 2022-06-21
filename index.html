@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Github Preview Generator</title>
+
+        <!-- Jetbrains Mono -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,400;1,100;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- JetBrains Mono -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Fira Code -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css" />
+
+        <!-- CSS Animations -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
+        <!-- Font Awesome -->
+        <script
+            src="https://kit.fontawesome.com/b36151d84e.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- dom-to-image -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"
+            integrity="sha512-wUa0ktp10dgVVhWdRVfcUO4vHS0ryT42WOEcXjVVF2+2rcYBKTY7Yx7JCEzjWgPV+rj2EDUr8TwsoWF6IoIOPg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!-- FileSave.js -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.js"
+            integrity="sha512-B+gr+zLWg81qxVwvtYwKrmjvQtZKD/GGFF7jD80OfzbqFw+NsbS5faEqpCO7Q7oRw1bYi0+WLJf54j8Vm7NADw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!-- JavaScript -->
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="wrapper">
+            <div class="box">
+                <div class="header animate__animated animate__fadeInDown">
+                    <h1>Github Preview Generator</h1>
+                </div>
+                <div class="input">
+                    <label
+                        for="url-input"
+                        class="form-label animate__animated animate__fadeInLeft"
+                        >Repository URL:</label
+                    >
+                    <div class="url animate__animated animate__fadeInRight">
+                        <span>http://github.com/</span>
+                        <input
+                            type="text"
+                            name="input"
+                            id="url-input"
+                            class="form-control"
+                        />
+                    </div>
+                    <label
+                        for="style"
+                        class="form-label animate__animated animate__fadeInLeft"
+                        >Style:</label
+                    >
+                    <select
+                        name="style"
+                        id="styles"
+                        class="form-select animate__animated animate__fadeInRight"
+                    >
+                        <option value="">Select Theme</option>
+                        <option value="tokyo-night">Tokyo Night</option>
+                        <option value="dracula">Dracula</option>
+                        <option value="monokai">Monokai</option>
+                        <option value="one-dark">One Dark</option>
+                        <option value="one-light">One Light</option>
+                        <option value="github-dark">Github Dark</option>
+                        <option value="github-light">Github Light</option>
+                        <option value="night-owl-dark">Night Owl Dark</option>
+                        <option value="night-owl-light">Night Owl light</option>
+                        <option value="winter-is-coming">
+                            Winter Is Coming
+                        </option>
+                    </select>
+                    <button
+                        type="button"
+                        class="btn btn-dark animate__animated animate__fadeIn"
+                        id="generate"
+                    >
+                        Generate
+                    </button>
+                </div>
+                <div class="image-preview animate__animated animate__fadeIn">
+                    <div id="img"></div>
+                </div>
+                <button
+                    type="button"
+                    class="btn btn-primary animate__animated animate__fadeIn"
+                    id="download"
+                >
+                    Download
+                </button>
+                <div class="footer">
+                    <p class="animate__animated animate__fadeInUp">
+                        Made By
+                        <a href="https://www.github.com/oneill19/">Oneill19</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
