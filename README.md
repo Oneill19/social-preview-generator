@@ -1,4 +1,4 @@
-<h1 align="center">Social-Preview-Generator</h1>
+<h1 align="center">Social Preview Generator</h1>
 
 <p align="center" width="100%">
     <a href="#"><img align="center" src="https://user-images.githubusercontent.com/66797449/179540009-d72560a4-a0d9-4501-998b-9d1ddffa3512.svg" title="HTML5" width="70" height="60"/></a>
